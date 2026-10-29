@@ -122,7 +122,8 @@ Available encoders
        Datasets/DataArrays.
      - :py:class:`~earthkit.data.encoders.netcdf.NetCDFEncoder`
    * - ``geotiff``
-     - Encode data as GeoTIFF. Requires geo-referenced raster data.
+     - Encode data as GeoTIFF. Requires geo-referenced raster data. Passing ``driver="COG"``
+       writes a Cloud Optimized GeoTIFF.
      - :py:class:`~earthkit.data.encoders.geotiff.GeoTIFFEncoder`
    * - ``csv``
      - Encode tabular data as comma-separated values.
@@ -156,3 +157,4 @@ Examples
 --------
 
 - :ref:`/tutorials/target/grib_encoder.ipynb`
+- :ref:`/tutorials/target/grib_to_geotiff.ipynb`
